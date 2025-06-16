@@ -15,21 +15,24 @@ This project showcases an end-to-end data pipeline and visualisation process for
 ## 📁 Repository Structure
 
 ```
-├── data/
-│   └── *.csv                        # Raw data files needed for running the Databricks notebook
-│
 ├── dbt-mssql/
-│   ├── global_development/         # Your dbt project folder (customise with your project name)
-│   │   ├── models/                 # Modified SQL models for dbt
-│   │   ├── dbt_project.yml         # Updated configuration file
-│   │   └── ...                     # Your dbt environment files
-│   ├── import/                     # Contains bar population data and schema.sql for table creation
+│   ├── import/                     # Contains bar population data and schema.sql for database setup
+│   ├── global_development/        # Your dbt project folder (you must match this with your own project name)
+│   │   ├── models/                # Modified SQL models (to merge with your existing dbt project)
+│   │   ├── dbt_project.yml        # Updated dbt configuration file
+│   │   └── ...                    # Other dbt project files
+│
+├── data/                           # Raw CSV files for Databricks notebook execution
+│   └── *.csv
+│
+├── Global_Development.ipynb        # Databricks-compatible notebook for EDA and data transformation
+│   └── (Note: This notebook also references its own required data)
 │
 ├── powerbi/
-│   └── Global_Development.pdf      # Exported PDF of Power BI dashboard (for reference)
+│   └── Global_Development.pdf      # Exported Power BI dashboard (since Desktop .pbix not included)
 │
-├── Global_Development.ipynb        # Databricks-compatible notebook (EDA + transformation)
 └── README.md                       # This file
+
 ```
 
 ---
