@@ -21,12 +21,13 @@ This project showcases an end-to-end data pipeline and visualisation process for
 │   │   ├── models/                # Modified SQL models (to merge with your existing dbt project)
 │   │   ├── dbt_project.yml        # Updated dbt configuration file
 │   │   └── ...                    # Other dbt project files
-│
-├── data/                           # Raw CSV files for Databricks notebook execution
-│   └── *.csv
+├── |   ├──data/                           # Raw CSV files for Databricks notebook execution
+│       └── *.csv
 │
 ├── Global_Development.ipynb        # Databricks-compatible notebook for EDA and data transformation
-│   └── (Note: This notebook also references its own required data)
+│   ├──── (Note: This notebook also references its own required data)
+├── |   ├──data/                           # Raw CSV files for Databricks notebook execution
+│       └── *.csv
 │
 ├── powerbi/
 │   └── Global_Development.pdf      # Exported Power BI dashboard (since Desktop .pbix not included)
