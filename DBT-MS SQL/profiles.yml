@@ -1,0 +1,18 @@
+global_development:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: "ODBC Driver 17 for SQL Server"  # make the driver explicit
+      server: localhost
+      port: 1433
+      database: global_development
+      schema: dbo
+      user: cool_user
+      password: cool_pass
+      # ---- ONE of the blocks below ----
+      encrypt: false          #  ← Option A: no TLS
+      # encrypt: true         #  ← Option B: keep TLS …
+      # trust_cert: true      #            … but skip validation
+      retries: 3
+      timeout: 30
