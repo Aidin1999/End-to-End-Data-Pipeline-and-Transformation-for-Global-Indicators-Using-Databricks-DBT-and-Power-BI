@@ -1,5 +1,4 @@
 # End-to-End-Data-Pipeline-and-Transformation-for-Global-Indicators-Using-Databricks-DBT-and-Power-BI
-Here is a polished `README.md` file for your GitHub repository, written in a clear and professional tone:
 
 ---
 
@@ -88,4 +87,3 @@ For any questions, feedback, or collaboration opportunities:
 
 ---
 
-Let me know if you want to split this into multiple markdown files or need a short version for your GitHub repo description.
